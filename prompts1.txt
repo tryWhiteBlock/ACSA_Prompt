@@ -1,1 +1,0 @@
-[{"role": "system", "content": "\n    You need to complete a task named 'Aspect category sentiment analysis' under the user's guide.\n    Aspect category sentiment analysis (ACSA) aims to identify sentiment polarities of predefined aspect categories in a sentence."}]

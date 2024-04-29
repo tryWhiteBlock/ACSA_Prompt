@@ -145,22 +145,22 @@ def do_predict(train_src,prompt_file,test_src,result_file,shot_nums,simple):
     result_dataFrame.to_csv(result_file,index=False)
     comput_accuracy(test_src,result_file)
 if __name__ =="__main__":
-    train_src1="/home/su/acsa_prompt/data/processed_data/mams_train.csv"
-    prompt_file1="/home/su/acsa_prompt/prompts1.txt"
-    test_src1="/home/su/acsa_prompt/data/processed_data/mams_test.csv"
-    result_file1="/home/su/acsa_prompt/data/result_data/mams_zero-shot.csv"
+    train_src1="./data/processed_data/mams_train.csv"
+    prompt_file1="./prompts1.txt"
+    test_src1="./data/processed_data/mams_test.csv"
+    result_file1="./data/result_data/mams_zero-shot.csv"
     shot_nums1=0
     thread1=threading.Thread(target=do_predict, args=(train_src1, prompt_file1,test_src1,result_file1,shot_nums1,False))
-    train_src2="/home/su/acsa_prompt/data/processed_data/mams_train.csv"
-    prompt_file2="/home/su/acsa_prompt/prompts2.txt"
-    test_src2="/home/su/acsa_prompt/data/processed_data/mams_test.csv"
-    result_file2="/home/su/acsa_prompt/data/result_data/mams_one-shot.csv"
+    train_src2="./data/processed_data/mams_train.csv"
+    prompt_file2="./prompts2.txt"
+    test_src2="./data/processed_data/mams_test.csv"
+    result_file2="./data/result_data/mams_one-shot.csv"
     shot_nums2=1
     thread2=threading.Thread(target=do_predict, args=(train_src2, prompt_file2,test_src2,result_file2,shot_nums2,False))
-    train_src3="/home/su/acsa_prompt/data/processed_data/mams_train.csv"
-    prompt_file3="/home/su/acsa_prompt/prompts3.txt"
-    test_src3="/home/su/acsa_prompt/data/processed_data/mams_test.csv"
-    result_file3="/home/su/acsa_prompt/data/result_data/mams_five-shot.csv"
+    train_src3="./data/processed_data/mams_train.csv"
+    prompt_file3="./prompts3.txt"
+    test_src3="./data/processed_data/mams_test.csv"
+    result_file3="./data/result_data/mams_five-shot.csv"
     shot_nums3=5
     thread3=threading.Thread(target=do_predict, args=(train_src3, prompt_file3,test_src3,result_file3,shot_nums3,False))
     #thread1.start()

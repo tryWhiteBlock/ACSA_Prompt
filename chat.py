@@ -1,7 +1,7 @@
 import openai
 import os
-api_key_path="/home/su/acsa_prompt/api_key"
-base_url_path="/home/su/acsa_prompt/api_base_url"
+api_key_path="./api_key"
+base_url_path="./api_base_url"
 with open(api_key_path) as f:
     openai.api_key=f.read()
 with open(base_url_path) as f:

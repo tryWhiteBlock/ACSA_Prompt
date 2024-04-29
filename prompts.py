@@ -34,7 +34,7 @@ def guide(history:list,aspect:list,sentence:str):
     guide2={}
     guide2["role"]="user"
     guide2["content"]='''
-    Sencond, I will give you a sentence in a pair of single quotation marks, in which you are asked to identify sentiment polarities of predefined aspect categories later.
+    Second, I will give you a sentence in a pair of single quotation marks, in which you are asked to identify sentiment polarities of predefined aspect categories later.
     To make sure you do your job better,this step, you should find out the words related to each given aspect category in the sentence.'''+"sentence:'"+sentence+"'"
     message.append(guide2)
     response2={}
